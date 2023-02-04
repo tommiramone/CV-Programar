@@ -1,0 +1,120 @@
+.navbar {
+  font-size: 1.4em;
+}
+
+.foto {
+  border-radius: 100%;
+  max-width: 5em;
+}
+.text {
+  font-size: 1.3em;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+}
+
+section h1 {
+  text-align: center;
+  margin: 0.5em;
+}
+
+#inicio {
+  font-size: 1.2em;
+  background-color: #4dbdeb;
+  display: flex;
+  flex-flow: column;
+}
+
+#info {
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#estudios {
+  background-color: #dfeeee;
+  display: flex;
+  flex-flow: column;
+}
+
+#habilidades {
+  background-color: #4dbdeb;
+  display: flex;
+  flex-flow: column;
+  padding: 1em;
+}
+
+#experiencia {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 2em;
+}
+
+#contacto {
+  background-color: #ffe08c;
+  display: flex;
+  flex-flow: column;
+}
+
+.infoText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trabajo {
+  border-bottom: 4px black solid;
+  margin: 1em;
+}
+
+.table {
+  max-width: 50%;
+  font-size: 1.5em;
+}
+
+#btnUp {
+  display: flex;
+  position: fixed;
+  bottom: 1em;
+  right: 10px;
+}
+
+.btnSubir {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  opacity: 0;
+  background-color: inherit;
+  font-size: 1.7em;
+  padding: 0.7em;
+  border-radius: 100%;
+  /* box-sizing: border-box;    */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 1s, transform 1s;
+}
+
+@media only screen and (min-width: 769px) {
+  #inicio,
+  #info,
+  #estudios,
+  #habilidades,
+  #experiencia,
+  #contacto {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+  }
+
+  #inicio p {
+    padding: 1em;
+  }
+}
